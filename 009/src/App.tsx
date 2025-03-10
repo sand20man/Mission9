@@ -2,8 +2,6 @@ import './App.css'
 import teamsData from "./CollegeBasketballTeams.json";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-// ✅ Header Component
 const Header = () => {
     return (
         <header className="text-center my-4">
@@ -12,7 +10,6 @@ const Header = () => {
     );
 };
 
-// ✅ Team Component (Displays one team)
 const Team = ({ school, name, abbrev, city, state }) => {
     return (
         <div className="team-card mb-3 p-3 border rounded">
@@ -22,7 +19,6 @@ const Team = ({ school, name, abbrev, city, state }) => {
     );
 };
 
-// ✅ TeamList Component (Maps teams to Team component)
 const TeamList = () => {
     return (
         <div className="container">
@@ -41,7 +37,6 @@ const TeamList = () => {
     );
 };
 
-// ✅ App Component
 function App() {
     return (
         <div>
